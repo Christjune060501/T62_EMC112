@@ -1,0 +1,248 @@
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int limit = 6;
+
+        LinkedList<String> player = new LinkedList<>();
+
+        // Players
+        player.add("Player 1: ");
+        player.add("Player 2: ");
+        player.add("Player 3: ");
+        player.add("Player 4: ");
+        player.add("Player 5: ");
+
+        // Generate Random Score
+        Random rand1 = new Random();
+        int r1_score1 = rand1.nextInt(limit);
+        int r1_score2 = rand1.nextInt(limit);
+        int r1_score3 = rand1.nextInt(limit);
+        int r1_score4 = rand1.nextInt(limit);
+        int r1_score5 = rand1.nextInt(limit);
+
+        //// Round 1 ////
+        // rScore = roundScore
+        LinkedList<Integer> rScore1 = new LinkedList<>();
+
+        // Scores
+        rScore1.add(r1_score1);
+        rScore1.add(r1_score2);
+        rScore1.add(r1_score3);
+        rScore1.add(r1_score4);
+        rScore1.add(r1_score5);
+
+        System.out.println("\nRound 1");
+
+        System.out.print(player.get(0));
+        System.out.print(rScore1.get(0) + "\n");
+
+        System.out.print(player.get(1));
+        System.out.print(rScore1.get(1) + "\n");
+
+        System.out.print(player.get(2));
+        System.out.print(rScore1.get(2) + "\n");
+
+        System.out.print(player.get(3));
+        System.out.print(rScore1.get(3) + "\n");
+
+        System.out.print(player.get(4));
+        System.out.print(rScore1.get(4) + "\n");
+        // End of Round 1 //
+
+        // Generate Random Score
+        Random rand2 = new Random();
+        int r2_score1 = rand2.nextInt(limit);
+        int r2_score2 = rand2.nextInt(limit);
+        int r2_score3 = rand2.nextInt(limit);
+        int r2_score4 = rand2.nextInt(limit);
+        int r2_score5 = rand2.nextInt(limit);
+
+        //// Round 2 ////
+        // rScore = roundScore
+        LinkedList<Integer> rScore2 = new LinkedList<>();
+
+        // Scores
+        rScore2.add(r2_score1);
+        rScore2.add(r2_score2);
+        rScore2.add(r2_score3);
+        rScore2.add(r2_score4);
+        rScore2.add(r2_score5);
+
+        System.out.println("\nRound 2");
+
+        System.out.print(player.get(0));
+        System.out.print(rScore2.get(0) + "\n");
+
+        System.out.print(player.get(1));
+        System.out.print(rScore2.get(1) + "\n");
+
+        System.out.print(player.get(2));
+        System.out.print(rScore2.get(2) + "\n");
+
+        System.out.print(player.get(3));
+        System.out.print(rScore2.get(3) + "\n");
+
+        System.out.print(player.get(4));
+        System.out.print(rScore2.get(4) + "\n");
+        // End of Round 2 //
+
+        Random rand3 = new Random();
+        int r3_score1 = rand3.nextInt(limit);
+        int r3_score2 = rand3.nextInt(limit);
+        int r3_score3 = rand3.nextInt(limit);
+        int r3_score4 = rand3.nextInt(limit);
+        int r3_score5 = rand3.nextInt(limit);
+
+        //// Round 3 ////
+        // rScore = roundScore
+        LinkedList<Integer> rScore3 = new LinkedList<>();
+
+        // Scores
+        rScore3.add(r3_score1);
+        rScore3.add(r3_score2);
+        rScore3.add(r3_score3);
+        rScore3.add(r3_score4);
+        rScore3.add(r3_score5);
+
+        System.out.println("\nRound 3");
+
+        System.out.print(player.get(0));
+        System.out.print(rScore3.get(0) + "\n");
+
+        System.out.print(player.get(1));
+        System.out.print(rScore3.get(1) + "\n");
+
+        System.out.print(player.get(2));
+        System.out.print(rScore3.get(2) + "\n");
+
+        System.out.print(player.get(3));
+        System.out.print(rScore3.get(3) + "\n");
+
+        System.out.print(player.get(4));
+        System.out.print(rScore3.get(4) + "\n");
+        // End of Round 3 //
+
+        Random rand4 = new Random();
+        int r4_score1 = rand4.nextInt(limit);
+        int r4_score2 = rand4.nextInt(limit);
+        int r4_score3 = rand4.nextInt(limit);
+        int r4_score4 = rand4.nextInt(limit);
+        int r4_score5 = rand4.nextInt(limit);
+
+        //// Round 4 ////
+        // rScore = roundScore
+        LinkedList<Integer> rScore4 = new LinkedList<>();
+
+        // Scores
+        rScore4.add(r4_score1);
+        rScore4.add(r4_score2);
+        rScore4.add(r4_score3);
+        rScore4.add(r4_score4);
+        rScore4.add(r4_score5);
+
+        System.out.println("\nRound 4");
+
+        System.out.print(player.get(0));
+        System.out.print(rScore4.get(0) + "\n");
+
+        System.out.print(player.get(1));
+        System.out.print(rScore4.get(1) + "\n");
+
+        System.out.print(player.get(2));
+        System.out.print(rScore4.get(2) + "\n");
+
+        System.out.print(player.get(3));
+        System.out.print(rScore4.get(3) + "\n");
+
+        System.out.print(player.get(4));
+        System.out.print(rScore4.get(4) + "\n");
+        // End of Round 4 //
+
+        int finalScore1 = rScore1.get(0) + rScore2.get(0) + rScore3.get(0) + rScore4.get(0);
+        int finalScore2 = rScore1.get(1) + rScore2.get(1) + rScore3.get(1) + rScore4.get(1);
+        int finalScore3 = rScore1.get(2) + rScore2.get(2) + rScore3.get(2) + rScore4.get(2);
+        int finalScore4 = rScore1.get(3) + rScore2.get(3) + rScore3.get(3) + rScore4.get(3);
+        int finalScore5 = rScore1.get(4) + rScore2.get(4) + rScore3.get(4) + rScore4.get(4);
+
+        // Comparing scores
+        // Player 1
+        if(finalScore1 > finalScore2 && finalScore1 > finalScore3 && finalScore1 > finalScore4 && finalScore1 > finalScore5)
+        {
+            System.out.println("\nPlayer 1: First winner");
+
+            if(finalScore2 > finalScore3 && finalScore2 > finalScore4 && finalScore2 > finalScore5)
+                System.out.println("Player 2: Second winner");
+            else if(finalScore3 > finalScore2 && finalScore3 > finalScore4 && finalScore3 > finalScore5)
+                System.out.println("Player 3: Second winner");
+            else if(finalScore4 > finalScore2 && finalScore4 > finalScore3 && finalScore4 > finalScore5)
+                System.out.println("Player 4: Second winner");
+            else
+                System.out.println("Player 5: Second winner");
+        }
+
+        // Player 2
+        else if(finalScore2 > finalScore1 && finalScore2 > finalScore3 && finalScore2 > finalScore4 && finalScore2 > finalScore5)
+        {
+            System.out.println("\nPlayer 2: First winner");
+
+            if(finalScore1 > finalScore3 && finalScore1 > finalScore4 && finalScore1 > finalScore5)
+                System.out.println("Player 1: Second winner");
+            else if(finalScore3 > finalScore1 && finalScore3 > finalScore4 && finalScore3 > finalScore5)
+                System.out.println("Player 3: Second winner");
+            else if(finalScore4 > finalScore1 && finalScore4 > finalScore3 && finalScore4 > finalScore5)
+                System.out.println("Player 4: Second winner");
+            else
+                System.out.println("Player 5: Second winner");
+        }
+
+        // Player 3
+        else if(finalScore3 > finalScore1 && finalScore3 > finalScore2 && finalScore3 > finalScore4 && finalScore3 > finalScore5)
+        {
+            System.out.println("\nPlayer 3: First winner");
+
+            if(finalScore1 > finalScore2 && finalScore1 > finalScore4 && finalScore1 > finalScore5)
+                System.out.println("Player 1: Second winner");
+            else if(finalScore2 > finalScore1 && finalScore2 > finalScore4 && finalScore2 > finalScore5)
+                System.out.println("Player 2: Second winner");
+            else if(finalScore4 > finalScore1 && finalScore4 > finalScore2 && finalScore4 > finalScore5)
+                System.out.println("Player 4: Second winner");
+            else
+                System.out.println("Player 5: Second winner");
+        }
+
+        // Player 4
+        else if(finalScore4 > finalScore1 && finalScore4 > finalScore2 && finalScore4 > finalScore3 && finalScore4 > finalScore5)
+        {
+            System.out.println("\nPlayer 4: First winner");
+
+            if(finalScore1 > finalScore2 && finalScore1 > finalScore3 && finalScore1 > finalScore5)
+                System.out.println("Player 1: Second winner");
+            else if(finalScore2 > finalScore1 && finalScore2 > finalScore3 && finalScore2 > finalScore5)
+                System.out.println("Player 2: Second winner");
+            else if(finalScore3 > finalScore1 && finalScore3 > finalScore2 && finalScore3 > finalScore5)
+                System.out.println("Player 3: Second winner");
+            else
+                System.out.println("Player 5: Second winner");
+        }
+
+        // Player 5
+        else //(finalScore5 > finalScore1 && finalScore5 > finalScore2 && finalScore5 > finalScore3 && finalScore5 > finalScore4)
+        {
+            System.out.println("\nPlayer 5: First winner");
+
+            if(finalScore1 > finalScore2 && finalScore1 > finalScore3 && finalScore1 > finalScore4)
+                System.out.println("Player 1: Second winner");
+            else if(finalScore2 > finalScore1 && finalScore2 > finalScore3 && finalScore2 > finalScore4)
+                System.out.println("Player 2: Second winner");
+            else if(finalScore3 > finalScore1 && finalScore3 > finalScore2 && finalScore3 > finalScore4)
+                System.out.println("Player 3: Second winner");
+            else
+                System.out.println("Player 4: Second winner");
+        }
+    }
+}
+////// SIR SAKTO NA KAHA NI? //////
